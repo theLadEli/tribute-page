@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+    font-size: 7px;
+}
+
 /* Font imports */
 @font-face {
     font-family: 'zodiak';
@@ -18,23 +22,30 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'grape nuts';
+    src: url('assets/fonts/GrapeNuts-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
 
 /* Global styles */
 h1 {
     font-family: 'zodiak', serif;
     font-weight: 200;
     color: #fff;
-    font-size: 80px;
+    font-size: 10rem;
+    letter-spacing: 0.8rem;
 }
 
 h2 {
     color: #fff;
-    font-family: "Grape Nuts", cursive;
+    font-family: "grape nuts", cursive;
     font-weight: 400;
-    font-style: normal;      
-    font-size: 45px;
+    font-style: normal;
+    font-size: 6.5rem;
 }
 
 /* Hero section */
@@ -48,16 +59,36 @@ nav ul {
     color: #fff;
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    font-size: 3rem;
+}
+
+.n_icons {
+    position: absolute;
+    right: 10rem;
+    top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 header {
-    background: radial-gradient(85.05% 93.79% at 95.93% 60.64%, #0C0C0C 38.22%, #292929 55.66%, #585858 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    height: 100%;
+    background: radial-gradient(85.05% 93.79% at 95.93% 60.64%, #0C0C0C 38.22%, #292929 55.66%, #585858 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
 }
 
-header .row {
-    padding: 80px 0 50px 75px;
+.h_content {
+    max-width: 40%; /* Ensure it doesn't exceed 70% */
+    padding: 8rem 0 5rem 12.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15.5rem;
+    overflow-x: hidden;
 }
 
 .hero-img {
@@ -68,7 +99,38 @@ header .row {
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
+.hero-brief {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.1rem;
+    margin-top: 1rem;
+    margin-bottom: 6.4rem;
+
+    /* Typography */
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 3rem;
+}
+
 header hr {
     height: 2px;
     width: 35px;
+    color: #D9D9D9;
+    background-color: #D9D9D9;
+    box-shadow: none;
+    border: none;
+}
+
+.hero-quote {
+    font-family: "grape nuts", cursive;
+    font-size: 5rem;
+    color: #fff;
+    width: fit-content;
+    text-wrap: wrap;
+}
+
+.hc_body {
+    margin-left: 5rem;
 }
