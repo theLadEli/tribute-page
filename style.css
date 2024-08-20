@@ -1,7 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Font imports */
+@font-face {
+    font-family: 'zodiak';
+    src: url('assets/fonts/Zodiak-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'zodiak';
+    src: url('assets/fonts/Zodiak-Thin.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+/* Global styles */
+h1 {
+    font-family: 'zodiak', serif;
+    font-weight: 200;
+    color: #fff;
+    font-size: 80px;
+}
+
+h2 {
+    color: #fff;
+    font-family: "Grape Nuts", cursive;
+    font-weight: 400;
+    font-style: normal;      
+    font-size: 45px;
+}
+
+/* Hero section */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+    /* Typography */
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
 header {
     background: radial-gradient(85.05% 93.79% at 95.93% 60.64%, #0C0C0C 38.22%, #292929 55.66%, #585858 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-
     height: 100%;
+}
+
+header .row {
+    padding: 80px 0 50px 75px;
 }
 
 .hero-img {
@@ -10,4 +66,9 @@ header {
     right: 0;
     bottom: 0;
     transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+header hr {
+    height: 2px;
+    width: 35px;
 }
