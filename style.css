@@ -1,0 +1,13 @@
+header {
+    background: radial-gradient(85.05% 93.79% at 95.93% 60.64%, #0C0C0C 38.22%, #292929 55.66%, #585858 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+    height: 100%;
+}
+
+.hero-img {
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    bottom: 0;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
