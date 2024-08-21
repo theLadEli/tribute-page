@@ -182,8 +182,8 @@ header hr {
     }
 
     .h_content {
-        gap: 15rem;
-        padding: 4rem;
+        gap: 10rem;
+        padding: 4rem 4rem 0 4rem;
         max-width: 100%;
     }
 
@@ -204,9 +204,14 @@ header hr {
         align-items: center;
     }
 
+    .h_img {
+        width: 100%;
+        text-align: right;
+    }
+
     .hero-img {
         height: unset;
-        width: 100%;
+        width: 80%;
         position: unset;
     }
 
@@ -217,6 +222,7 @@ header hr {
     #hero {
         display: flex;
         flex-direction: column;
+        gap: 0;
     }
 
     header {
