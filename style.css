@@ -29,7 +29,19 @@ html {
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+    font-family: 'inter';
+    src: url('assets/fonts/Inter_24pt-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('assets/fonts/Inter_18pt-ExtraLight.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
 
 /* Global styles */
 h1 {
@@ -49,6 +61,10 @@ h2 {
 }
 
 /* Hero section */
+/* nav {
+    width: 100%;
+} */
+
 nav ul {
     list-style: none;
     display: flex;
@@ -58,14 +74,21 @@ nav ul {
     /* Typography */
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Inter', sans-serif;
+    font-family: 'inter', sans-serif;
+    font-weight: 200;
     font-size: 3rem;
+}
+
+nav a {
+    color: unset;
+    text-decoration: unset;
 }
 
 .n_icons {
     position: absolute;
-    right: 10rem;
-    top: 1rem;
+    transform: translateX(-100%);
+    right: 13rem;
+    top: 6.6rem;
     display: flex;
     flex-direction: row;
     gap: 5rem;
@@ -89,6 +112,7 @@ header {
     flex-direction: column;
     gap: 15.5rem;
     overflow-x: hidden;
+    z-index: 99;
 }
 
 .hero-img {
@@ -97,6 +121,7 @@ header {
     right: 0;
     bottom: 0;
     transform: matrix(-1, 0, 0, 1, 0, 0);
+    z-index: 1;
 }
 
 .hero-brief {
