@@ -60,6 +60,14 @@ h2 {
     font-size: 6.5rem;
 }
 
+h3 {
+    color: #fff;
+    font-family: "zodiak", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+}
+
 /* Hero section */
 
 nav ul {
@@ -98,7 +106,8 @@ header {
     height: 100vh;
     display: flex;
     flex-direction: row;
-    box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.639);
+    z-index: 5;
 }
 
 .h_content {
@@ -159,6 +168,102 @@ header hr {
 #hamburger-icon {
     display: none;
     color: white !important;
+}   
+
+#about {
+    background: #585858;
+    padding: 10rem 17.4rem 10rem 17.4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    z-index: 4;
+}
+
+.a_main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: max-content;
+}
+
+.am_paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    /* Typography */
+    color: #ffffffac;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.a_sidebar {
+    border-left: solid 1px #fff;
+    padding-left: 7rem;
+    min-width: 300px;
+    max-width: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    /* Typography */
+    color: #ffffffac;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.a_sidebar img {
+    width: 70%;
+}
+
+#mobile-menu {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    background: #585858;
+    padding: 5rem 10rem;
+    z-index: 999;
+    height: 100vh;
+    min-width: 200px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    font-size: 4rem;
+}
+
+#mm_close-column {
+    width: 100%;
+    text-align: right;
+}
+
+#mmcc_close {
+    font-family: "grape nuts";
+    font-size: 6%;
+    color: #fff;
+    margin-right: -3rem;
+}
+
+.mm_icons {
+    margin-bottom: 12rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.hidden {
+    display: none !important;
 }
 
 /* Mobile media query */
@@ -227,4 +332,18 @@ header hr {
     header {
         height: unset;
     }
+
+    #about {
+    flex-direction: column;
+    padding: 10rem 5rem;
+    }
+
+    .a_main {
+        width: 100%;
+    }
+
+    .a_sidebar {
+        padding-left: 5rem;
+    }
+
 }

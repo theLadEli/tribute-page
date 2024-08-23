@@ -67,10 +67,33 @@
 
     </header>
 
+    <nav id="mobile-menu" class="hidden">
+        <div id="mm_close-column">
+            <a id="mmcc_close" onclick="closeMobileMenu()">X</a>
+        </div>
+
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href=""></a>About</a></li>
+            <li><a href=""></a>Quotes</a></li>
+            <li><a href=""></a>Books</a></li>
+        </ul>
+
+        <div class="mm_icons">
+            <a href="https://marktwainhouse.org">
+                <img src="assets/globe.svg" alt="Globe icon">
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Mark_Twain">
+                <img src="assets/wikipedia.svg" alt="wikipedia icon">
+            </a>
+        </div>
+
+    </nav>
+
     <section id="about">
         <div class="a_main">
             <h3>About</h3>
-            <div>
+            <div class="am_paragraph">
                 <p>
                     Mark Twain, whose real name is Samuel Langhorne Clemens, was born on November 30, 1835, in Florida, Missouri. He is known as one of America's most cherished authors and humorists. Growing up along theMissi ssippi River, Twain was deeply influenced by the culture and people of the region, which would later become central themes in his writing.
                 </p>
@@ -102,6 +125,7 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
