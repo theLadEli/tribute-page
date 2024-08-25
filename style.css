@@ -334,6 +334,16 @@ header hr {
     background: #585858;
 }
 
+.q_intro {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1000px;
+}
+
 .q_wrapper {
     max-width: 1262px;
     width: 100%;
@@ -347,15 +357,11 @@ header hr {
     width: 100%;
 }
 
-.q_grid {
-    /* width: 1262px */
-}
-
 .q_grid .grid-item {
     border-left: solid 1px #fff;
     padding-left: 3rem;
-    padding-right: 3rem;
-    height: 100%;
+    padding-right: 8rem;
+    flex: 1;
 }
 
 .q_grid .row {
@@ -363,8 +369,13 @@ header hr {
 }
 
 .q_grid .grid-item img {
-    width: 40px !important;
+    width: 30px !important;
     margin-bottom: 3rem;
+}
+
+.q_grid .grid-item p {
+    font-family: "grape nuts", cursive;
+
 }
 
 /* Mobile media query */
