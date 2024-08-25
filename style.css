@@ -68,6 +68,19 @@ h3 {
     font-size: 6rem;
 }
 
+p {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    /* Typography */
+    color: #fff;
+    opacity: 0.9;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 3.5rem;
+    line-height: 5rem;
+}
+
 /* Hero section */
 nav {
     width: -webkit-fill-available;
@@ -255,6 +268,16 @@ header hr {
     width: 100%;
 }
 
+#quotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 17.4rem 15rem 17.4rem;
+    
+    z-index: 4;
+    background: #585858;
+}
+
 #mobile-menu {
     position: absolute;
     top: 0rem;
@@ -299,6 +322,49 @@ header hr {
 
 .hidden {
     display: none !important;
+}
+
+
+#quotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    z-index: 4;
+    background: #585858;
+}
+
+.q_wrapper {
+    max-width: 1262px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+}
+
+.container {
+    width: 100%;
+}
+
+.q_grid {
+    /* width: 1262px */
+}
+
+.q_grid .grid-item {
+    border-left: solid 1px #fff;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 100%;
+}
+
+.q_grid .row {
+    margin-bottom: 8rem;
+}
+
+.q_grid .grid-item img {
+    width: 40px !important;
+    margin-bottom: 3rem;
 }
 
 /* Mobile media query */
