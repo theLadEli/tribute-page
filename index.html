@@ -158,7 +158,7 @@
         <div class="q_wrapper">
             <div class="q_intro">
                 <h3>Quotes</h3>
-                <p>Although his quotes are countless, here are some of his most popular. Explore these memorable sayings
+                <p>Explore these memorable sayings
                     that continue to inspire and entertain.</p>
 
             </div>
@@ -215,9 +215,48 @@
     </section>
 
 
+    <section id="books">
+
+        <div class="container">
+            <div class="carousel carousel-slider center">
+                <!-- Carousel Item 1 -->
+                <div class="carousel-item" href="#one!">
+                    <!-- <img src="https://via.placeholder.com/800x400" alt="Image 1"> -->
+                    <h4>First Slide Title</h4>
+                    <p>This is the first slide's description.</p>
+                    <div class="custom-div">This is a custom div content.</div>
+                </div>
+                <!-- Carousel Item 2 -->
+                <div class="carousel-item" href="#two!">
+                    <img src="https://via.placeholder.com/800x400" alt="Image 2">
+                    <h4>Second Slide Title</h4>
+                    <p>This is the second slide's description.</p>
+                    <div class="custom-div">This is a custom div content.</div>
+                </div>
+                <!-- Carousel Item 3 -->
+                <div class="carousel-item" href="#three!">
+                    <img src="https://via.placeholder.com/800x400" alt="Image 3">
+                    <h4>Third Slide Title</h4>
+                    <p>This is the third slide's description.</p>
+                    <div class="custom-div">This is a custom div content.</div>
+                </div>
+            </div>
+        </div>        
+        
+    </section>
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                fullWidth: true,
+                indicators: true
+            });
+        });
+    </script>
+    <!-- <script src="script.js"></script> -->
 </body>
 
 </html>
