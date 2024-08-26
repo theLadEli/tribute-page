@@ -2,27 +2,20 @@ function closeMobileMenu() {
     document.getElementById("mobile_menu").addClass("hidden")
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, options);
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.carousel');
+
+  var instances = M.Carousel.init(elems, {
+      fullWidth: true,
+      indicators: true
   });
 
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.carousel').carousel();
+  // Next and Previous Controls
+  document.querySelector('.next').addEventListener('click', function () {
+      instances[0].next();
   });
 
-  
-
-  var instance = M.Carousel.init({
-    fullWidth: true,
-    indicators: true
+  document.querySelector('.prev').addEventListener('click', function () {
+      instances[0].prev();
   });
-
-  // Or with jQuery
-
-  $('.carousel.carousel-slider').carousel({
-    fullWidth: true,
-    indicators: true
-  });
+});

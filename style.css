@@ -68,7 +68,16 @@ h3 {
     font-size: 6rem;
 }
 
-p {
+h4 {
+    color: #fff;
+    font-family: "grape nuts", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7rem;
+}
+
+p,
+.paragraph {
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
@@ -147,7 +156,8 @@ header {
 }
 
 .h_content {
-    max-width: 60%; /* Ensure it doesn't exceed 70% */
+    max-width: 60%;
+    /* Ensure it doesn't exceed 70% */
     padding: 8rem 0 5rem 10rem;
     display: flex;
     flex-direction: column;
@@ -205,14 +215,14 @@ header hr {
 #hamburger-icon {
     display: none;
     color: white !important;
-}   
+}
 
 #about {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15rem 17.4rem 15rem 17.4rem;
-    
+
     z-index: 4;
     background: #585858;
 }
@@ -273,7 +283,7 @@ header hr {
     flex-direction: column;
     align-items: center;
     padding: 5rem 17.4rem 15rem 17.4rem;
-    
+
     z-index: 4;
     background: #585858;
 }
@@ -329,7 +339,7 @@ header hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     z-index: 4;
     background: #585858;
 }
@@ -378,6 +388,67 @@ header hr {
 
 }
 
+#books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 17.4rem 15rem 17.4rem;
+    background: #585858;
+}
+
+.b_title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.b_title h3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.b_wrapper {
+    max-width: 1262px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    align-items: center;
+}
+
+.ci_book-img {
+    max-width: 250px;
+    height: fit-content;
+    filter: drop-shadow(13px 11px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 4px;
+}
+
+.ci_content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.ci_content p {
+    font-size: 3rem !important;
+}
+
+.ci_content ul {
+    gap: 3rem;
+    display: flex;
+    font-size: 2.5rem;
+    color: #ffffffc5;
+    font-family: 'zodiak', serif;
+    list-style: none;
+}
+
 /* Mobile media query */
 @media only screen and (max-width: 600px) {
 
@@ -412,7 +483,7 @@ header hr {
         width: unset;
         height: unset;
     }
-    
+
     nav {
         display: flex;
         flex-direction: row;
@@ -446,8 +517,8 @@ header hr {
     }
 
     #about {
-    flex-direction: column;
-    padding: 10rem 5rem;
+        flex-direction: column;
+        padding: 10rem 5rem;
     }
 
     .a_main {
