@@ -525,6 +525,24 @@ footer a {
     color: #ffffffc7;
 }
 
+/* Small desktops - height - media query */
+@media (min-height: 700px) and (max-height: 1000px) {
+
+    .h_wrapper {
+        min-height: unset;
+    }
+
+    .h_content {
+        justify-content: start;
+        padding-top: 18rem;
+    }
+
+    .hero-img {
+        max-height: 100vh;
+    }
+
+}
+
 /* Mobile media query */
 @media only screen and (max-width: 600px) {
 
