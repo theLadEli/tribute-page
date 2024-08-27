@@ -297,9 +297,15 @@ header hr {
     font-family: "Inter", sans-serif !important;
 }
 
+.sn_links a {
+    color: #0C0C0C !important;
+    text-decoration: none !important;
+
+}
+
 .sn_links a:active, .sn_links a:focus {
-    color: #585858;
-    text-decoration: none;
+    color: #585858 !important;
+    text-decoration: none !important;
 }
 
 .sn_logo {
