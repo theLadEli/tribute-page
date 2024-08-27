@@ -288,27 +288,42 @@ header hr {
     background: #585858;
 }
 
-#mobile-menu {
-    position: absolute;
-    top: 0rem;
-    left: 0;
-    background: #585858;
-    padding: 5rem 10rem;
-    z-index: 999;
-    height: 100vh;
-    min-width: 200px;
-    width: fit-content;
+.sn_links {
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 4rem;
+    font-family: "Inter", sans-serif !important;
+}
+
+.sn_links a:active, .sn_links a:focus {
+    color: #585858;
+    text-decoration: none;
+}
+
+.sn_logo {
+    width: 50px;
+}
+
+.user-view {
+    padding: 5rem;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
-#mobile-menu ul {
+.sn_footer {
     display: flex;
     flex-direction: column;
-    gap: 8rem;
-    font-size: 4rem;
+    gap: 2rem;
+}
+
+.sn_footer a, .sn_footer div {
+    color: #292929;
+    font-family: 'inter', serif;
+    font-size: 2.4rem;
 }
 
 #mm_close-column {
@@ -416,7 +431,17 @@ header hr {
     gap: 10rem;
 }
 
+.carousel {
+    margin-top: 5rem;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .carousel-item {
+    height: auto !important;
     display: flex;
     flex-direction: row;
     gap: 10rem;
@@ -449,6 +474,51 @@ header hr {
     list-style: none;
 }
 
+.c_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
+}
+
+.c_nav button {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'zodiak', serif;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+footer {
+    background: #585858;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 0;
+}
+
+.f_wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.f_copyright, footer a {
+    color: #fff;
+    font-family: 'inter', sans-serif;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+footer a {
+    color: #ffffffc7;
+}
+
 /* Mobile media query */
 @media only screen and (max-width: 600px) {
 
@@ -468,6 +538,10 @@ header hr {
         display: inline;
     }
 
+    .h_wrapper {
+        flex-direction: column;
+    }
+
     .h_content {
         gap: 10rem;
         padding: 4rem 4rem 0 4rem;
@@ -482,6 +556,7 @@ header hr {
         gap: 2rem;
         width: unset;
         height: unset;
+        margin-right: 5rem;
     }
 
     nav {
@@ -489,6 +564,10 @@ header hr {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+
+    #hamburger-icon {
+        margin-left: 5rem;
     }
 
     .h_img {
@@ -517,7 +596,6 @@ header hr {
     }
 
     #about {
-        flex-direction: column;
         padding: 10rem 5rem;
     }
 
@@ -525,8 +603,37 @@ header hr {
         width: 100%;
     }
 
+    .a_wrapper {
+        flex-direction: column;
+    }
+
     .a_sidebar {
         padding-left: 5rem;
+    }
+
+    #quotes {
+        padding: 10rem 5rem;
+    }
+
+    .q_grid .row {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+        margin-bottom: 4rem
+    }
+
+    .carousel-item {
+        flex-direction: column;
+        height: unset;
+        max-height: unset;
+    }
+
+    #books {
+        padding: 10rem 8rem;
+    }
+
+    .user-view {
+        padding: 5rem !important;
     }
 
 }
